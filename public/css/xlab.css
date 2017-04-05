@@ -1,0 +1,71 @@
+body{
+
+
+}
+.center{
+	text-align:-webkit-center;
+	margin-top:7%;
+}
+
+.ImgContainer{
+
+	margin-top:7%;
+}
+
+.Display{
+	
+	height:18em;
+	padding-top: 1%;
+	margin-left:20px;
+	margin-top:1%;
+	width:30%;
+	border: #ecf0f1 solid 1px;
+}
+
+.display_middle{
+	
+	border: #ecf0f1 solid 1px;
+}
+
+
+.flip-container {
+	perspective: 1000;
+}
+
+	.flip-container .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width :96%
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+.slide{
+	height:250px;
+	width:80%;
+	overflow:hidden;
+
+}

@@ -1,0 +1,161 @@
+.reference{
+    margin-top:0.6%;
+    color:#777777;
+}
+
+.education{
+    color:#777777;
+}
+
+@-webkit-keyframes progressbar {
+    from {
+        width:0
+    }
+    to {
+        width:100%
+    }
+}
+.bar-fill {
+    height:15px;
+    display:block;
+    background:#45c9a5;
+    width:0;
+    border-radius:8px;
+    -webkit-transition:width .4s;
+    -moz-transition:width .4s;
+    transition:width .4s;
+    -webkit-animation:progressbar 4s;
+    animation:progressbar 3s ;
+    animation-iteration-count:1;
+    -webkit-animation-fill-mode: forwards;
+
+}
+
+
+.bar-unfill {
+    margin-top: 4%;
+    height:15px;
+    display:block;
+    border-radius:8px
+
+}
+
+.bar-text{
+    text-align:right;
+}
+
+.bar-space{
+
+}
+
+.preg{
+    height: 40px;
+
+}
+
+.education-arrow{
+
+    height:100px;
+    padding-top:1%;
+}
+
+.reference-text{
+    text-align: right;
+    height:100px;
+}
+
+@media screen and (max-width: 990px) {
+    .Preg{
+        margin-top:5%;
+        height: 40px;
+    }
+
+    .bar-text{
+        text-align: left;
+    }
+
+    .bar-space{
+        margin-top:-3%;
+    }
+
+    .education-arrow{
+        display:none;
+    }
+
+    .reference-text {
+        text-align: center;
+        height: 50px;
+        margin-top:5%
+    }
+
+    .reference-content{
+        height:70px;
+        padding-top:2%;
+        font-weight:400;
+        text-align: center;
+    }
+
+    .reference{
+        margin-top:10%;
+        color:#777777;
+    }
+
+    .education{
+        color:#777777;
+        margin-top:10%;
+    }
+}
+
+
+.reference-content{
+    height:100px;
+    padding-top:2%;
+    font-weight:700
+}
+
+.point{
+    opacity: 0.7;
+    width: 4px;
+    margin-top: -10px;
+}
+
+.arrow{
+    opacity: 0.7;
+}
+
+.experience{
+    padding-top:5%;
+    color:#777777;
+}
+
+.subtitle{
+    border-bottom:solid 1PX;
+    padding-bottom:5%;
+}
+
+.personal{
+    padding-top:5%;
+    color:#777777;
+}
+
+.side{
+    padding-right:0;
+    text-align: center;
+    padding-left:0;
+}
+
+
+div.experience a:hover{
+    color: #333;
+    background: #efefef;
+}
+
+div.experience a{
+    text-decoration: none;
+    color: #666;
+    display: block;
+    transition: all 0.2s ease-in-out;
+@media screen and (min-width: 500px);
+    padding: 4px 5px 4px 4px;
+}
+

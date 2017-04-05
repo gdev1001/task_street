@@ -1,0 +1,126 @@
+@extends('app')
+@section('content')
+
+<link href="/css/post/bootstrap.min.css" rel="stylesheet">
+<link href="/css/post/font-awesome.min.css" rel="stylesheet">
+<link href="/css/post/animate.min.css" rel="stylesheet">
+<link href="/css/post/lightbox.css" rel="stylesheet">
+<link href="/css/post/main.css" rel="stylesheet">
+<link href="/css/post/responsive.css" rel="stylesheet">
+
+
+<link rel="shortcut icon" href="/img/ico/favicon.ico">
+
+
+
+
+<section id="blog" class="padding-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-5">
+                <div class="sidebar blog-sidebar">
+                    {{--<div class="sidebar-item  recent">--}}
+                        {{--<h3>Newsfeed</h3>--}}
+                        {{--<div class="media">--}}
+                            {{--<div class="pull-left">--}}
+                            {{--</div>--}}
+                            {{--<div class="media-body">--}}
+                                {{--<h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit,</a></h4>--}}
+                                {{--<p>posted on  07 March 2016</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="media">--}}
+                            {{--<div class="pull-left">--}}
+                            {{--</div>--}}
+                            {{--<div class="media-body">--}}
+                                {{--<h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit,</a></h4>--}}
+                                {{--<p>posted on  07 March 2016</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="media">--}}
+                            {{--<div class="pull-left">--}}
+                            {{--</div>--}}
+                            {{--<div class="media-body">--}}
+                                {{--<h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit,</a></h4>--}}
+                                {{--<p>posted on  07 March 2016</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    <div class="sidebar-item categories">
+                        <h3>Categories</h3>
+                        <ul class="nav navbar-stacked">
+                            <li class = "skill"><a href="#">Machine Learning<span class="pull-right">(0)</span></a></li>
+                            <li class="active skill"><a href="#">Web Development<span class="pull-right">(8)</span></a></li>
+                            <li class = "skill"><a href="#">Andirod devopment<span class="pull-right">(4)</span></a></li>
+                            <li class = "skill"><a href="#">IOS development<span class="pull-right">(0)</span></a></li>
+                            <li class = "skill"><a href="#">Windows Development<span class="pull-right">(0)</span></a></li>
+                            <li class = "skill"><a href="#">UI/UX Design <span class="pull-right">(0)</span></a></li>
+                            <li class = "skill"><a href="#">Art <span class="pull-right">(0)</span></a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-md-9 col-sm-7">
+                <div class="row">
+                    @foreach($tasks as $task)
+                    <div class="web col-md-6 col-sm-12 blog-padding-right">
+                        <div class="single-blog two-column">
+                            <div class="post-thumb">
+                                <div class="post-overlay">
+                                    <span class="uppercase"><a href= "{{url("/project/task/".$task->id)}}">14 <br><small>Feb</small></a></span>
+                                </div>
+                            </div>
+                            <div class="post-content overflow">
+                               <-- <h2 class="post-title bold"><a href= "{{url("/project/task/".$task->id)}}">{{$task->name}}</a></h2>
+                               <-- <h3 class="post-author"><a href="#">{{$task->project->company->user->name}}</a></h3> -->
+                                <p style = "height:100px;overflow:auto;">{{$task->description}}</p>
+                                <a href="{{url("/project/task/".$task->id)}}" class="read-more">View More</a>
+                                <div class="post-bottom overflow">
+                                    <ul class="nav nav-justified post-nav">
+                                        <li><a href="#"><img src="{{asset('img/currency.png')}}" style = "width:48px;height:48px">  $150</a></li>
+                                        <li><a href="#"><img src="{{asset('img/clock.png')}}" style = "height:40px"> 5 hours</a></li>
+                                        <li><a href="#"><img src="{{asset('img/view.png')}}" style = "height:40px">100 views</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+
+                </div>
+                <div class="blog-pagination">
+                    <ul class="pagination">
+                        <li><a class="active" href="#">left</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+
+                        <li><a href="#">right</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/#blog-->
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/lightbox.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<script>
+    $(function(){
+        $(".skill").click(function(){
+            $(".skill").removeClass("active");
+            $(this).addClass("active");
+        });
+    });
+
+</script>
+
+@endsection

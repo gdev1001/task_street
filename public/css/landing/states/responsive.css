@@ -1,0 +1,89 @@
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 80px; }
+  main {
+    margin-top: 50px; }
+  .menu-list-container ul {
+    float: left; }
+    .menu-list-container ul li {
+      display: block; }
+  .my-account {
+    text-align: center; }
+  .done-section-content:before {
+    right: 0; }
+  .how-it-works-first-section {
+    height: auto;
+    padding-bottom: 50px; }
+    .how-it-works-first-section:after {
+      content: normal; }
+  .how-it-works-second-section {
+    padding-top: 10px; }
+  .how-it-works-second-section img {
+    top: 0; }
+  .how-it-works-first-section-text img {
+    display: none; }
+  .how-it-works-third-section:after {
+    content: normal; }
+  .how-it-works-second-section-text img {
+    display: none; }
+  .how-it-works-third-section-text {
+    padding-top: 20px; }
+    .how-it-works-third-section-text p {
+      margin-top: 20px; }
+  .how-it-works-heading-section {
+    height: 310px; }
+  .how-it-works h3 i {
+    font-size: 92px; }
+  .how-it-works h3 span {
+    top: 0;
+    font-size: 25px; }
+  .done-section .right-img {
+    right: 0; }
+  .about-us-section {
+    padding-top: 30px; }
+    .about-us-section .title-section {
+      margin-bottom: 30px; }
+    .about-us-section .about-text-content {
+      margin-bottom: 30px; }
+  .testimonial-section {
+    padding: 60px 0; }
+  .footer .lower-footer-list {
+    float: left; }
+    .footer .lower-footer-list .lower-footer-item {
+      display: block;
+      margin: 0; }
+  .footer .footer-about-us, .footer .footer-quick-links, .footer .footer-supports {
+    padding-left: 30px;
+    margin-top: 15px; }
+  .footer .footer-title {
+    margin-bottom: 10px; }
+  .footer .upper-footer {
+    padding-bottom: 30px; }
+  .footer .footer-logo {
+    padding-left: 30px; }
+  .footer .lower-footer {
+    padding-left: 15px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu-list-container {
+    padding: 0; }
+    .menu-list-container li a {
+      padding: 10px 5px;
+      font-size: 12px; }
+  .how-it-works-heading-section {
+    height: 450px; }
+  .how-it-works h3 i {
+    font-size: 190px; }
+  .how-it-works h3 span {
+    width: 64%;
+    font-size: 28px;
+    top: 0; }
+  .how-it-works-third-section:after {
+    width: 181px;
+    height: 338px;
+    background-size: 181px 338px; }
+  .footer .footer-about-us, .footer .footer-quick-links, .footer .footer-supports {
+    padding-left: 20px;
+    margin-top: 15px; } }
+
+/*# sourceMappingURL=../maps/states/responsive.css.map */

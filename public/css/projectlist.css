@@ -1,0 +1,136 @@
+.title{
+	font-family:"Open Sans",Arial, Helvetica;
+	font-weight:300;
+	/*color:rgb(125, 142, 167);*/
+	font-size:20px;
+	color:rgb(31, 40, 54);
+	}
+.extraspace{
+	margin-top:2%;
+
+}
+.center{
+	text-align: center;
+}
+
+.btn-primary-outline{
+	color: #5e5e5e;
+	background-color: transparent;
+	background-image: none;
+	border-color: #5e5e5e;
+}
+}
+
+.space{
+	text-align:center;
+	vertical-align: middle;
+	border-radius: 20px;
+	padding: 30px !important;
+	margin-top:5%;
+}
+
+.active{
+    background: #dce3e8;
+}
+
+.numberCircle {
+    border-radius: 50%;
+	float:left;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #666;
+    color: #666;
+    text-align: center;
+    font-weight: 300;
+    padding:5px;
+}
+
+.upload{
+	text-align: center;
+	border:dashed 1px grey;
+	padding:10px !important;
+}
+
+.input_{
+	border:none;
+}
+
+.grid {
+	background: #EEE;
+	max-width: 1200px;
+}
+
+.grid-item {
+	float: left;
+}
+
+/* item is invisible, but used for layout */
+.grid-item,
+.grid-item-content {
+	width: 320px;
+	height: 220px;
+	margin-top: 5%;
+}
+
+/* grid-item-content is visible, and transitions size */
+.grid-item-content {
+	width: 320px;
+	height: 220px;
+	border-color: hsla(0, 0%, 0%, 0.5);
+	border-radius: 5px;
+	-webkit-transition: width 0.4s, height 0.4s;
+	transition: width 0.4s, height 0.4s;
+}
+
+
+
+.bar-fill {
+	height:15px;
+	display:block;
+	background:lightblue
+;
+	width:0;
+	border-radius:8px;
+	-webkit-transition:width .4s;
+	-moz-transition:width .4s;
+	transition:width .4s;
+	-webkit-animation:progressbar 4s;
+	animation:progressbar 3s ;
+	animation-iteration-count:1;
+	-webkit-animation-fill-mode: forwards;
+
+}
+
+
+.bar-unfill {
+	height:15px;
+	display:block;
+	border-radius:8px
+
+}
+
+.form-container{
+	height:90px;
+	text-align: center;
+	margin-top:5%;
+}
+
+.form-text {
+	border-bottom: 1px solid #e5e5e5;
+	border-radius: 3px;
+	padding: 10px;
+	width: 280px;
+	margin-bottom: 5px;
+	background: #fff;
+	color: #555;
+	text-align: center;
+	font-family:"Open Sans",Arial, Helvetica;
+
+}
+.form-text:focus {
+	outline: none;
+	-webkit-box-reflect: below 1px linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.2));
+	border-bottom:1px solid;
+
+
+}

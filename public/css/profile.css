@@ -1,0 +1,151 @@
+.photocover
+{
+	height:500px;
+	text-align: center;
+	font-family:'Raleway',sans-serif;
+	margin-top:5%;
+}
+
+.module
+{
+	height: 200px;
+	background-color: rgb(187, 189, 177);
+	padding-top: 3%;
+	color: white;
+
+}
+
+.currentModule
+{
+	height: 200px; 
+	color: rgb(120, 121, 109);
+	padding-top: 3%;
+	border: 1px dashed;
+}
+
+.arrow
+{
+	margin-top: 5%;
+}
+
+.large
+{
+	font-size:x-large;
+}
+
+.title{
+	font-weight: 200;
+	color: rgb(119, 108, 108);
+	font-family:'Raleway';
+}
+
+.space
+{
+	margin-bottom:3%;
+}
+
+.grid{
+	height:50px;
+	background-color: rgb(214, 216, 201);
+	position:absolute;
+	bottom:0;
+	text-align: center;
+	padding-top:1%;
+	text-decoration: none;
+}
+
+.button{
+	font-size: 22px;
+	padding: 13px 60px;
+	margin-top: 2%;
+	font-weight:100;
+}
+
+
+.data-container{
+	height:1000px;
+	background-color: #e7e7e7;
+	padding-top: 5%;
+	padding-left:5%;
+	color:#777777;
+
+}
+
+.small-size{
+	margin-bottom:8%;
+}
+
+.center{
+	text-align: center;
+
+}
+
+.box{
+	border: dashed 1px;
+	text-align: center;
+	width: 80%
+}
+
+.left{
+	margin-left:10%;
+}
+
+#main {
+  float: left;
+  width: 750px;
+}
+
+#sidebar {
+  position: absolute;
+  top:200px;
+  left:400px;
+  width: 100px;
+}
+
+#sequence {
+  width: 600px;
+  height: 70px;
+}
+
+#legend {
+  padding: 10px 0 0 3px;
+}
+
+#sequence text, #legend text {
+  font-weight: 600;
+  fill: #fff;
+}
+
+#chart {
+  position: relative;
+}
+
+#chart path {
+  stroke: #fff;
+}
+
+#explanation {
+  position: static;
+  top: 260px;
+  left: 305px;
+  width: 140px;
+  text-align: center;
+  color: #666;
+  z-index: -1;
+}
+
+#percentage {
+  font-size: 2.5em;
+}
+
+.text-center {
+	text-align: center;
+}
+
+#tip {
+	background-color:white;
+	border:1px solid blue;
+	position:absolute;
+	left:-200px;
+	top:100px;
+}

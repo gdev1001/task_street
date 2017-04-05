@@ -1,0 +1,47 @@
+
+    <div class = 'container-fuild'>
+
+        <div class= 'row'>
+
+            <div class = 'col-md-4' style = 'color:rgba(128, 128, 128, 1);padding-left:100px;padding-top:40px;font-weight:100'>
+                <h2 style = "font-family:'Raleway'">First Interview</h2>
+
+                <h5>Helping connect founder and Co-fonder in UCI</h5>
+
+                    <h4>Difficulty Level</h4> 
+                    <h6>- Elementry Web Development Project</h6>
+
+                <h4>Development Skills</h4>
+                <div class = "row" >
+                    <img src="{{asset('img/Java.png')}}">
+                    <img src="{{asset('img/Sql.png')}}">
+                    <img src="{{asset('img/Html.png')}}">
+                    <img src="{{asset('img/Js.png')}}">
+                </div>
+
+            
+            </div>
+
+
+
+            <div class = 'col-md-4' style  = 'padding-top:50px;'>
+                <img src="{{asset('img/Interview.jpg')}}" style="float:left;width:400px">
+            </div>
+
+
+
+            <div class = 'col-md-4' style = 'color:rgba(128, 128, 128, 1);padding-left:100px;padding-top:100px;'>
+               
+                        <div class = 'row'>
+                        </div>
+                        <h4>
+                        </h4>
+
+                     <h3 style="font-family:'Raleway';font-weight:100">Sponsed by:</h3>
+                    <img src="{{asset('img/BlackStone.png')}}" style = "opacity:0.6">
+
+            </div>
+
+        </div>
+
+    </div>

@@ -1,0 +1,330 @@
+.bg{
+    background: url('../img/bgimg.jpg') no-repeat fixed center center;
+    background-size: cover;
+    height:800px;
+    opacity: 0.05;
+}
+.btn-primary-outline {
+    color: #0275d8;
+    background-color: transparent;
+    background-image: none;
+    border-color: #0275d8;
+}
+.left-section {
+    background: url("/bgimg.jpg");
+    background-size: cover;
+    max-width: 500px;
+    height: 100%;
+}
+.vertical-line{
+    width: 1px; /* Line width */
+    background-color: #d99c4e; /* Line color */
+    height: 100%; /* Override in-line if you want specific height. */
+    position: absolute; /* Causes the line to float to left of content.
+    You can instead use position:absolute or display:inline-block
+    if this fits better with your design */
+    left:42%;
+    bottom:10%
+
+}
+.type{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+}
+.btn {
+    display: inline-block;
+    padding: .375rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.active{
+    padding-top: 50px;
+    background-color: #DAAF74;
+    text-align: center;
+    height: 100%;
+    border-radius: 10px;
+    color:white;
+
+}
+
+.left-panel{
+    background-color:#232323;
+    height:800px;
+    padding-right:0;
+}
+
+.right-panel{
+    height:800px;
+    margin-top: -65px;
+}
+
+
+.info{
+    position:absolute;
+    right: 200px;
+    color: white;
+    /*bottom: 45%;*/
+    left: 200px;
+    font-weight: 100;
+    line-height: normal;
+}
+
+.line-space{
+    line-height:1.5;
+    font-family:lato;
+    font-weight:300;
+
+}
+
+.floater{
+    float:left;
+    height:50%;
+    margin-bottom:30%;
+}
+
+.content{
+    clear:both;
+    height: 40%;
+    position:relative;
+
+    display: flex;
+    align-items: flex-end;
+    color: #60373E;
+    /* text-align: justify; */
+    padding: 7%;
+
+}
+
+.form{
+    margin-left: 1px;
+    text-align: left;
+}
+
+.inp{
+    background:transparent;
+    box-shadow: none;
+    width: 100%;
+    border: none;
+    border-bottom: grey dashed 1.5px;
+    opacity:0.5;
+}
+
+.inp:focus{
+
+}
+
+
+.lab{
+    text-align: left !important;
+    font-size: 1.5em !important;
+    opacity: 0.9 !important;
+    padding-top:0 !important;
+}
+
+.bt{
+    background: #ECA612;
+    border: none;
+    margin-top: 20%;
+    font-size: 15px;
+    font-family: lato;
+    font-weight: 200;
+    padding: 10px;
+}
+
+.footer2 {
+    position:absolute;
+    bottom:22%;
+    left:200px;
+    color:#ECA612;
+}
+
+.footer-nav {
+    list-style: none;
+}
+
+.footer-nav li {
+    float: left;
+    display: inline;
+    padding: 0 5px;
+    text-align: center;
+}
+
+
+@media screen and ( max-width: 600px ) {
+
+    .content h3 {
+        text-align: center;
+    }
+
+    .left-panel {
+        margin-bottom: 20px;
+    }
+
+    .info {
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    .info h1 {
+        font-size: 36px;
+    }
+
+    .sel {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .footer-nav {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .bt {
+        margin-top: 5%;
+    }
+
+    .inp {
+        width: 90%;
+    }
+
+    .btn {
+        width: 90%;
+    }
+
+}
+@media screen and (max-width: 568px){
+
+    .content h3 {
+        text-align: center;
+    }
+
+    .bg {
+        height: 500px;
+    }
+
+    .left-panel {
+        height: 500px;
+    }
+
+    .info {
+        top: 120px;
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    .info h1 {
+        font-size: 26px;
+    }
+
+    .sel {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .footer2 {
+        position : absolute;
+        left: 0;
+        right: 0;
+        bottom: 10%;
+        width: 300px;
+        margin: auto;
+    }
+    ul.footer-nav {
+        list-style: none outside none
+    }
+    ul.footer-nav li {
+        float: left;
+    }
+
+    .bt {
+        margin-top: 5%;
+    }
+
+    .inp {
+        width: 90%;
+    }
+
+    .btn {
+        width: 90%;
+    }
+
+
+}
+
+@media screen and (max-width: 500px){
+
+    .content h3 {
+        text-align: center;
+    }
+
+    .bg {
+        max-height: 500px;
+    }
+
+    .left-panel {
+        max-height: 500px;
+    }
+
+    .info {
+        right: 0;
+        left: 0;
+        text-align: center;
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .info h1 {
+        font-size: 26px;
+    }
+
+    .sel {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .footer2 {
+        position : absolute;
+        left: 0;
+        right: 0;
+        bottom: 10%;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    ul.footer-nav {
+        list-style: none outside none
+    }
+    ul.footer-nav li {
+        float: left;
+    }
+
+    .bt {
+        margin-top: 5%;
+    }
+
+    .inp {
+        width: 90%;
+    }
+
+    .btn {
+        width: 90%;
+    }
+
+
+}

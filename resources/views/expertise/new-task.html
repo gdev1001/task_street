@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Wolf - Bootstrap Admin Theme</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/compiled/theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/brankic.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/ionicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/select2.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/select2-bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/datepicker.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/jquery.minicolors.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/summernote.css" />
+
+	<!-- javascript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="js/vendor/jquery-1.12.3.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<script src="js/vendor/select2.min.js"></script>
+	<script src="js/vendor/bootstrap-datepicker.js"></script>
+	<script src="js/vendor/jquery.validate.min.js"></script>
+	<script src="js/vendor/summernote.min.js"></script>
+	<script src="js/vendor/jquery.raty.js"></script>
+	<script src="js/vendor/jquery.cookie.js"></script>
+	<script src="js/vendor/jquery.minicolors.min.js"></script>
+	<script src="js/vendor/jquery.maskedinput.js"></script>
+	<script src="js/theme.js"></script>
+
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body id="form-new-task">
+	<div id="wrapper">
+		<div id="sidebar-default" class="main-sidebar">
+			<div class="current-user">
+				<a href="index.html" class="name">
+					<img class="avatar" src="images/avatars/1.jpg" />
+					<span>
+						John Smith
+					</span>
+				</a>
+			</div>
+			<div class="menu-section">
+				<h3>General</h3>
+				<ul>
+					<li>
+						<a href="index.html">
+							<i class="ion-android-earth"></i>
+							<span>Manage Project</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="menu-section">
+            	<h3>Account</h3>
+            	<ul class="menu">
+                    <li>
+                        <a href="account-profile.html">Account settings</a>
+                    </li>
+                    <li>
+                        <a href="account-billing.html">Billing</a>
+                    </li>
+                    <li>
+                        <a href="account-notifications.html">Notifications</a>
+                    </li>
+                    <li>
+                        <a href="account-support.html">Help / Support</a>
+                    </li>
+                    <li>
+                        <a href="signup.html">Sign out</a>
+                    </li>
+                </ul>
+            </div>
+			<div class="bottom-menu hidden-sm">
+				<ul>
+					<li><a href="#"><i class="ion-help"></i></a></li>
+					<li>
+						<a href="#">
+							<i class="ion-archive"></i>
+							<span class="flag"></span>
+						</a>
+						<ul class="menu">
+							<li><a href="#">5 unread messages</a></li>
+							<li><a href="#">12 tasks completed</a></li>
+							<!-- <li><a href="#">3 features added</a></li> -->
+						</ul>
+					</li>
+					<li><a href="signup.html"><i class="ion-log-out"></i></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content">
+			<div class="menubar">
+				<div class="sidebar-toggler visible-xs">
+					<i class="ion-navicon"></i>
+				</div>
+
+				<div class="page-title">
+					New Task
+
+					<small class="hidden-xs">
+						<strong>Create a new task</strong>
+					</small>
+				</div>
+			</div>
+
+			<div class="content-wrapper">
+				<form id="new-task" class="form-horizontal" method="post" action="#" role="form">
+				  	<div class="form-group">
+					    <label class="col-sm-2 col-md-2 control-label">Task Title</label>
+					    <div class="col-sm-10 col-md-8">
+					      <input type="text" class="form-control" name="task[name]" />
+					    </div>
+				  	</div>
+					<div class="form-group">
+					    <label class="col-sm-2 col-md-2 control-label">Task Budget</label>
+					    <div class="col-sm-10 col-md-8">
+					      <input type="text" class="form-control" name="task[budget]" />
+					    </div>
+				  	</div>
+					<div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 col-md-2 control-label">Short Description</label>
+					    <div class="col-sm-10 col-md-8">
+					    	<textarea class="form-control" rows="4" name="task[short_des]"></textarea>
+					    </div>
+				  	</div>
+					<div class="form-group">
+					    <label class="col-sm-2 col-md-2 control-label">Task Main Color</label>
+					    <div class="col-sm-10 col-md-8">
+					      	<input type="text" class="form-control minicolors" />
+					    </div>
+					</div>
+				  	<div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 col-md-2 control-label">Category</label>
+					    <div class="col-sm-10 col-md-8">
+					    	<select class="form-control" data-smart-select>
+					    		<option>Web Development</option>
+					    		<option>Front-end Developement</option>
+					    		<option>Android App Development</option>
+					    		<option>UI/UX</option>
+					    		<option>Content Development</option>
+					    		<option>Software Development</option>
+					    		<option>Design &amp; Development</option>
+					    	</select>
+					    </div>
+				  	</div>
+					<div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 col-md-2 control-label">Task Status</label>
+					    <div class="col-sm-10 col-md-8">
+					    	<select class="form-control" data-smart-select>
+					    		<option>In Progress</option>
+					    		<option>Waiting for Approval</option>
+					    		<option>Completed</option>
+					    	</select>
+					    </div>
+				  	</div>
+				  	<div class="form-group">
+				  		<label class="col-sm-2 col-md-2 control-label">Task Details</label>
+				  		<div class="col-sm-10 col-md-8">
+				  			<div id="summernote"></div>
+				  		</div>
+				  	</div>
+				  	<div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 col-md-2 control-label">Task tags</label>
+					    <div class="col-sm-10 col-md-8">
+					      	<input type="hidden" id="task-tags" style="width:100%" value="ball, toy, clothes" name="task[tags]" />
+					    </div>
+				  	</div>
+
+				  	<div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 col-md-2 control-label">Developers</label>
+					    <div class="col-sm-10 col-md-8">
+					      	<input type="hidden" id="task-developers" style="width:100%" value="Mr. Ami, Mr. Tumi, Mrs. She" name="task[developers]" />
+					    </div>
+				  	</div>
+
+				  	<div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 col-md-2 control-label">Task Completion date</label>
+					    <div class="col-sm-10 col-md-8">
+					    	<div class="input-group">
+							  	<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+							  	<input type="text" class="form-control datepicker" placeholder="03/05/2014" />
+							</div>
+					    </div>
+				  	</div>
+					<div class="form-group">
+					    <label class="col-sm-2 col-md-2 control-label">Task Documentation</label>
+					    <div class="col-sm-10 col-md-8">
+					      <input type="url" class="form-control" name="task[docs]" placeholder="http://site.com/docsid" />
+					    </div>
+				  	</div>
+					<div class="form-group">
+					    <div class="col-sm-offset-2 col-sm-10">
+					      	<div class="checkbox">
+					        	<label>
+					          		<input type="checkbox" name="task[send_notify]" /> Send Notification emails
+				        		</label>
+					      	</div>
+					    </div>
+				  	</div>
+				  	<div class="form-group form-actions">
+				    	<div class="col-sm-offset-2 col-sm-10 col-md-offset-2 col-md-10">
+				    		<a href="task.html" class="btn btn-default">Cancel</a>
+				      		<button type="submit" class="btn btn-success">Add Task</button>
+			    		</div>
+				  	</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="skin-switcher">
+		<div class="toggler">
+			<span class="brankic-brush"></span>
+		</div>
+		<ul class="menu">
+			<li>
+				<a class="active" data-skin="sidebar-default" href="#">
+					<span class="color default"></span> Default
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-clear" href="#">
+					<span class="color clear"></span> Clear
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-black" href="#">
+					<span class="color black"></span> Black
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-dark" href="#">
+					<span class="color dark"></span> Dark
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-flat" href="#">
+					<span class="color flat"></span> Flat
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-flat-dark" href="#">
+					<span class="color flat-dark"></span> Flat dark
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+		$(function () {
+
+			// Form validation
+			$('#new-task').validate({
+				rules: {
+					"task[title]": {
+						required: true
+					},
+					"task[notes]": {
+						required: true
+					}
+				},
+				highlight: function (element) {
+					$(element).closest('.form-group').removeClass('success').addClass('error');
+				},
+				success: function (element) {
+					element.addClass('valid').closest('.form-group').removeClass('error').addClass('success');
+				}
+			});
+
+			// Task tags and Developers with select2
+			$("#task-tags").select2({
+				placeholder: 'Select tags or add new ones',
+				tags:["shirt", "gloves", "socks", "sweater"],
+				tokenSeparators: [",", " "]
+			});
+			$("#task-developers").select2({
+				placeholder: 'Select developers or add new ones',
+				tags:["John Joe", "Dove Doe", "Xon Xee", "Jhana Panka"],
+				tokenSeparators: [",", " "]
+			});
+
+			// Bootstrap wysiwyg
+			$("#summernote").summernote({
+				height: 240,
+				toolbar: [
+				    ['style', ['style']],
+				    ['style', ['bold', 'italic', 'underline', 'clear']],
+				    ['fontsize', ['fontsize']],
+				    ['para', ['ul', 'ol', 'paragraph']],
+				    ['height', ['height']],
+				    ['insert', ['picture', 'link', 'video']],
+				    ['view', ['fullscreen', 'codeview']],
+				    ['table', ['table']],
+				]
+			});
+
+			// jQuery rating
+			$('#raty').raty({
+				path: 'images/raty',
+				score: 4
+			});
+
+			// Datepicker
+	        $('.datepicker').datepicker({
+	        	autoclose: true,
+	        	orientation: 'left bottom',
+	        });
+
+	        // Minicolors colorpicker
+	        $('input.minicolors').minicolors({
+	        	position: 'top left',
+	        	defaultValue: '#9b86d1',
+	        	theme: 'bootstrap'
+	        });
+
+	        // masked input example using phone input
+			$(".mask-phone").mask("(999) 999-9999");
+			$(".mask-cc").mask("9999 9999 9999 9999");
+		});
+	</script>
+
+</body>
+</html>

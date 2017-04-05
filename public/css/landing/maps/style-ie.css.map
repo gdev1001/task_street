@@ -1,0 +1,1 @@
+{"version":3,"file":"style-ie.css","sources":["style-ie.scss","base/_ie.scss"],"sourcesContent":["@import 'base/ie.scss';","ody {\r\n\tbackground: red;\r\n}"],"mappings":"ACAA,GAAG,CAAC;EACH,UAAU,EAAE,GAAI,GAChB","names":[],"sourceRoot":"/source/"}

@@ -1,0 +1,19 @@
+{
+    "name": "shokse/notice",
+    "description": "Notification library for Shokse.com",
+    "type": "Library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benyamin Maengkom",
+            "email": "bento@maengkom.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Vendor\\Package\\": "packages/shokse/notice/src"
+        }
+    },
+    "require": {}
+}

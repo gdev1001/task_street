@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Wolf - Bootstrap Admin Theme</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/compiled/theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/brankic.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/ionicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css" />
+
+	<!-- javascript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="js/vendor/jquery-1.12.3.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<script src="js/vendor/jquery.cookie.js"></script>
+	<script src="js/theme.js"></script>
+
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body id="projects">
+	<div id="wrapper">
+		<div id="sidebar-default" class="main-sidebar">
+			<div class="current-user">
+				<a href="index.html" class="name">
+					<img class="avatar" src="images/avatars/1.jpg" />
+					<span>
+						John Smith
+					</span>
+				</a>
+			</div>
+			<div class="menu-section">
+				<h3>General</h3>
+				<ul>
+					<li>
+						<a href="index.html">
+							<i class="ion-android-earth"></i>
+							<span>Manage Project</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="menu-section">
+            	<h3>Account</h3>
+            	<ul class="menu">
+                    <li>
+                        <a href="account-profile.html">Account settings</a>
+                    </li>
+                    <li>
+                        <a href="account-billing.html">Billing</a>
+                    </li>
+                    <li>
+                        <a href="account-notifications.html">Notifications</a>
+                    </li>
+                    <li>
+                        <a href="account-support.html">Help / Support</a>
+                    </li>
+                    <li>
+                        <a href="signup.html">Sign out</a>
+                    </li>
+                </ul>
+            </div>
+			<div class="bottom-menu hidden-sm">
+				<ul>
+					<li><a href="#"><i class="ion-help"></i></a></li>
+					<li>
+						<a href="#">
+							<i class="ion-archive"></i>
+							<span class="flag"></span>
+						</a>
+						<ul class="menu">
+							<li><a href="#">5 unread messages</a></li>
+							<li><a href="#">12 tasks completed</a></li>
+							<!-- <li><a href="#">3 features added</a></li> -->
+						</ul>
+					</li>
+					<li><a href="signup.html"><i class="ion-log-out"></i></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content">
+			<div class="menubar">
+				<div class="sidebar-toggler visible-xs">
+					<i class="ion-navicon"></i>
+				</div>
+
+				<div class="page-title">
+					Project Tasks
+				</div>
+				<a href="new-task.html" class="btn btn-success pull-right">
+					<span>Add Task</span>
+				</a>
+			</div>
+
+			<div class="content-wrapper clearfix">
+				<div class="row project-list">
+					<div class="project new">
+						<a href="new-task.html">
+							<i class="ion-ios7-plus-outline"></i>
+							<span class="info">
+								Create a New Task
+							</span>
+						</a>
+					</div>
+					<div class="project">
+						<div class="info">
+							<div class="name"><a href="task-details.html">Task Name 1</a></div>
+							<div class="category">Design & Development</div>
+							<div class="last-update">
+								Last updated 3 hours ago
+							</div>
+							<br/>
+							<div class="project-budget">
+								<p><strong>Budget:&nbsp;&nbsp;</strong>$500</p>
+							</div>
+							<div class="project-done-date">
+								<p><strong>Conpletion Date:&nbsp;&nbsp;</strong>25/06/16</p>
+							</div>
+							<div class="project-status">
+								<strong>Status:&nbsp;&nbsp;</strong>
+								<label class="label label-primary">In Progress</label>
+							</div>
+							<br/>
+							<div class="project-developers">
+								<strong>Developers:&nbsp;&nbsp;</strong><br/>
+								<a href="#">Jhon Doe</a>,
+								<a href="#">Abram</a>,
+								<a href="#">Mr. X</a>
+							</div>
+						</div>
+						<div class="members">
+							<a href="#" class="add-more">
+								<i class="fa fa-plus"></i>
+							</a>
+							<ul class="menu">
+								<li><a href="#">Delete Task</a></li>
+								<li><a href="#">Validating</a></li>
+                                <li><a href="#">Deny Project</a></li>
+                                <li><a href="edit-task.html">Edit Task</a></li>
+                                <li><a href="#">Download</a></li>
+								<li><a href="#">Invite a new user</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="project">
+						<div class="info">
+							<div class="name"><a href="task-details.html">Task Name 2</a></div>
+							<div class="category">Content Development</div>
+							<div class="last-update">
+								Last updated 1 week ago
+							</div>
+							<br/>
+							<div class="project-budget">
+								<p><strong>Budget:&nbsp;&nbsp;</strong>$500</p>
+							</div>
+							<div class="project-done-date">
+								<p><strong>Conpletion Date:&nbsp;&nbsp;</strong>25/06/16</p>
+							</div>
+							<div class="project-status">
+								<strong>Status:&nbsp;&nbsp;</strong>
+								<label class="label label-warning">Waiting for approval</label>
+							</div>
+							<br />
+							<div class="project-developers">
+								<strong>Developers:&nbsp;&nbsp;</strong><br/>
+								<a href="#">Jhon Doe</a>,
+								<a href="#">Abram</a>,
+								<a href="#">Mr. X</a>
+							</div>
+						</div>
+						<div class="members">
+							<a href="#" class="add-more">
+								<i class="fa fa-plus"></i>
+							</a>
+							<ul class="menu">
+								<li><a href="#">Delete Task</a></li>
+								<li><a href="#">Validating</a></li>
+                                <li><a href="#">Deny Project</a></li>
+                                <li><a href="edit-task.html">Edit Task</a></li>
+								<li><a href="#">Download</a></li>
+								<li><a href="#">Invite a new user</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="skin-switcher">
+		<div class="toggler">
+			<i class="brankic-brush"></i>
+		</div>
+		<ul class="menu">
+			<li>
+				<a class="active" data-skin="sidebar-default" href="#">
+					<span class="color default"></span> Default
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-clear" href="#">
+					<span class="color clear"></span> Clear
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-black" href="#">
+					<span class="color black"></span> Black
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-dark" href="#">
+					<span class="color dark"></span> Dark
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-flat" href="#">
+					<span class="color flat"></span> Flat
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+			<li>
+				<a data-skin="sidebar-flat-dark" href="#">
+					<span class="color flat-dark"></span> Flat dark
+					<i class="fa fa-check"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+		$(function () {
+			var $projects = $(".project");
+
+			$projects.each(function (index, el) {
+				var $btn = $(el).find(".add-more");
+				var $menu = $btn.siblings(".menu");
+				var timeout;
+
+				$btn.click(function (e) { e.preventDefault(); });
+
+				$(el).on("mouseenter", ".add-more, .menu", function () {
+					clearTimeout(timeout);
+					timeout = null;
+					$menu.addClass("active");
+				});
+
+				$(el).on("mouseleave", ".add-more, .menu", function () {
+					timeout = setTimeout(function () {
+						$menu.removeClass("active");
+					}, 400);
+				});
+			})
+		});
+	</script>
+</body>
+</html>
